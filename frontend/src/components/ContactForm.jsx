@@ -29,7 +29,7 @@ const ContactForm = () => {
     }
 
     try {
-      const response = await axios.post(`${API_URL}/api/contact`, { email });
+      const response = await axios.post(`${API_URL}/contact`, { email });
 
       if (response.status === 200) {
         setMessage("Form Submitted");
