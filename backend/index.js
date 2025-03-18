@@ -3,7 +3,8 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
+const serverless = require("serverless-http")
 
 app.use(cors());
 app.use(express.json());
@@ -55,11 +56,11 @@ const services = [
 ];
 
 // API Endpoints
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.send("API is running...");
 });
 
-app.get("/services", (req, res) => {
+app.get("/api/services", (req, res) => {
   res.json(services);
 });
 
@@ -84,6 +85,9 @@ app.post("/api/contact", (req, res) => {
   return res.status(200).json({ message: "Form Submitted" });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port ${PORT}`);
+// });
+
+module.exports = app;
+module.exports.handler = serverless(app);
