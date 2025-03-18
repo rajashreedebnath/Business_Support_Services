@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+const API_URL = process.env.REACT_APP_BACKEND_URL;
+
 const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
@@ -27,7 +29,7 @@ const ContactForm = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/api/contact", { email });
+      const response = await axios.post(`${API_URL}/api/contact`, { email });
 
       if (response.status === 200) {
         setMessage("Form Submitted");
