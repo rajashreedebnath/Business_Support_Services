@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "9a12396c-c77e-4b2b-83e5-a2f3cb399ff6",
+		"name": "EZ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37981138",
+		"_collection_link": "https://abc888-8627.postman.co/workspace/abc-Workspace~4fc0a518-aefe-4c1d-8b93-68f0f3be6cee/collection/37981138-9a12396c-c77e-4b2b-83e5-a2f3cb399ff6?action=share&source=collection_link&creator=37981138"
+	},
+	"item": [
+		{
+			"name": "abc@ez.works",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"abc@ez.works\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://business-support-services.vercel.app/contact",
+					"protocol": "https",
+					"host": [
+						"business-support-services",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "abc@gmail.com",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"abc@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://business-support-services.vercel.app/contact",
+					"protocol": "https",
+					"host": [
+						"business-support-services",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "abc@ez.com",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"abc@ez.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://business-support-services.vercel.app/contact",
+					"protocol": "https",
+					"host": [
+						"business-support-services",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"contact"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
