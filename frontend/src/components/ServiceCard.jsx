@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 
-const API_URL = process.env.REACT_APP_BACKEND_URL;
-
 const ServiceCard = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch(`${API_URL}/services`)
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/services`)
       .then((response) => response.json())
       .then((data) => setServices(data))
       .catch((error) => console.error("Error fetchinh services:", error));
